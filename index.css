@@ -1,0 +1,199 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    margin:0 auto
+}
+
+
+/* ======================================== */
+/*            Generic Container             */
+/* ======================================== */
+.container {
+    margin: 0 auto;
+    width: 95rem;
+}
+
+
+/* ======================================== */
+/*              Navigation Bar              */
+/* ======================================== */
+
+.nav-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item-container {
+    display: flex;
+    justify-content: space-between;
+    min-width: 70.5%;
+    margin-top: 2.5rem;
+}
+
+.nav-item{
+    display: inline-block;
+    width: 14rem;
+    height: 5.5rem;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-item1 {
+    background-color: #FF754E;
+}
+
+.nav-item2 {
+    background-color: #5FD3CE;
+}
+
+.nav-item3 {
+    background-color: #FFCD6A;
+}
+
+
+/* ======================================== */
+/*             CTA / Header                 */
+/* ======================================== */
+header {
+    padding: 5rem 7.5rem;
+    display: flex;
+    align-items: center;
+}
+
+/* Image */
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.image-container {
+    width: 21.8rem;
+}
+
+.header-text {
+    text-align: center;
+    width: 70%;
+    line-height: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-text h2{
+    font-size: 5.6rem;
+    text-align: center;
+}
+
+.header-text p {
+    font-size: 2rem;
+}
+
+.header-text p:last-child{
+    line-height: 1;
+    width: 50%;
+}
+
+/* ======================================== */
+/* History */
+/* ======================================== */
+.history{
+    background-color: #DDB9A3;
+    margin: 0 auto;
+    width: 93%;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 2.3rem;
+}
+
+/* ======================================== */
+/*                  About                   */
+/* ======================================== */
+
+.fire-container,
+.reserve-container {
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container_about img,
+.image-container_reserve img {
+    height: 10rem;
+}
+
+.fire-container p,
+.reserve-container p {
+    width: 20%;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    /* border: 2px solid red; */
+}
+
+/* Footer */
+footer {
+    margin-left: 10em;
+    padding-top: 1rem;
+}
+footer .image-container_footer {
+    background-image: url("./assets/footer_img.jpg");
+    background-repeat: no-repeat;
+    background-size: fill;
+    height: 40vh;
+}
